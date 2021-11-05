@@ -1,7 +1,10 @@
 /* ESP32 reading Belgium P1 smart meter and send to Mysql database
 Optional sending to domoticz
 
+Created by Barremans
+https://github.com/barremans/ESP32_P1_RW_TO_DB
 */
+
 #define SKETCH_VERSION "1.1.2"
 
 #include <TimedBlink.h>  //led control without using delay
@@ -32,8 +35,8 @@ const int domoticzGasIdx = 12;             // domoticz IDX 12 for P1 Gas
 const int domoticzEneryIdx = 24;           // domoticz IDX 24 for P1 electricity
 const bool outputOnSerial = true;
 
-char HOST_NAME[] = "zombiekillers.be";   // website for sending data to db
-char PATH_NAME[] = "Temp/AddP1V4.php";   // website folder for sending data to db
+char HOST_NAME[] = "***************";   // website for sending data to db
+char PATH_NAME[] = "*************";   // website folder for sending data to db
 String SENSOR_NAME = "";
 //===Change values to here===
 
